@@ -13,13 +13,13 @@ import { DestaqueDirective } from '../../directives/destaque.directive';
     <ion-content>
       <div class="pagina">
         <span class="eyebrow">MENSALIDADES</span>
-        <h1 style="margin: 6px 0">Escolha o plano<br>que <span class="verde" style="color:#6aa81f">combina com você.</span></h1>
+        <h1 style="margin: 6px 0">Escolha o plano<br>que <span class="verde" style="color:var(--amarelo)">combina com você.</span></h1>
         <p style="color: var(--muted)">Planos mensais para cada etapa da sua evolução.</p>
 
         @for (p of planos; track p.nome) {
           <div class="card corpo" appDestaque style="cursor: default; margin-bottom: 14px; padding: 18px"
-               [style.border]="p.destaque ? '2px solid #aee65e' : ''">
-            @if (p.destaque) { <span class="tag" style="background:#aee65e">MAIS ESCOLHIDO</span> }
+               [style.border]="p.destaque ? '2px solid var(--amarelo)' : ''">
+            @if (p.destaque) { <span class="tag" style="background:var(--amarelo); color:var(--preto); border-color:transparent;">MAIS ESCOLHIDO</span> }
             <span class="eyebrow">{{ p.nome }}</span>
             <!-- PIPE BUILT-IN: currency -->
             <h1 style="margin: 4px 0">{{ p.preco | currency: 'BRL' : 'symbol' : '1.0-0' }}<small style="font-size: 14px; color: var(--muted)">/mês</small></h1>
@@ -34,7 +34,7 @@ import { DestaqueDirective } from '../../directives/destaque.directive';
         }
 
         @if (escolhido) {
-          <div class="card corpo" style="cursor: default; background: #121710; color: #fff">
+          <div class="card corpo" style="cursor: default; background: var(--preto); color: var(--branco)">
             Você escolheu o plano <strong class="verde">{{ escolhido }}</strong>. Confirme sua matrícula com a equipe FitZone.
           </div>
         }

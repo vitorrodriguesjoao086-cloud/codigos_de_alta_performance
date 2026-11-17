@@ -24,7 +24,7 @@ import { DestaqueDirective } from '../../directives/destaque.directive';
 
         @if (treino.itens().length === 0) {
           <div class="vazio">
-            <div style="font-size: 36px; color: var(--coral)">✳</div>
+            <div style="font-size: 36px; color: var(--amarelo)">✳</div>
             <h3>Seu próximo treino começa aqui.</h3>
             <p>Escolha exercícios no catálogo e dê início a uma nova etapa.</p>
             <ion-button color="primary" routerLink="/exercicios">Ver exercícios →</ion-button>
@@ -37,7 +37,7 @@ import { DestaqueDirective } from '../../directives/destaque.directive';
                 <span class="eyebrow">{{ i.musculo | musculo }}</span>
                 <h3 style="margin: 4px 0">{{ nome(i.id) }}</h3>
               </div>
-              <ion-button fill="clear" style="--color: #e84935" (click)="remover($event, i)"><ion-icon slot="icon-only" name="trash"></ion-icon></ion-button>
+              <ion-button fill="clear" style="--color: var(--amarelo)" (click)="remover($event, i)"><ion-icon slot="icon-only" name="trash"></ion-icon></ion-button>
             </div>
           }
           @if (erroTraducao) {

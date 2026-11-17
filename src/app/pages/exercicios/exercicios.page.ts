@@ -28,9 +28,9 @@ import { FallbackImgDirective } from '../../directives/fallback-img.directive';
         <ion-searchbar aria-label="Buscar exercício" placeholder="Buscar exercício..." debounce="500" (ionInput)="buscar($event)"></ion-searchbar>
 
         <div class="chips">
-          <span class="tag" [style.background]="grupo === '' ? '#aee65e' : ''" (click)="filtrar('')">Todos</span>
+          <span class="tag" [style.background]="grupo === '' ? 'var(--amarelo)' : ''" (click)="filtrar('')">Todos</span>
           @for (g of grupos; track g) {
-            <span class="tag" [style.background]="grupo === g ? '#aee65e' : ''" (click)="filtrar(g)">{{ g | musculo }}</span>
+            <span class="tag" [style.background]="grupo === g ? 'var(--amarelo)' : ''" (click)="filtrar(g)">{{ g | musculo }}</span>
           }
         </div>
 

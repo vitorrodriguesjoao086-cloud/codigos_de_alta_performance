@@ -23,7 +23,7 @@ import { DestaqueDirective } from '../../directives/destaque.directive';
         <p style="color: var(--muted); margin-top: 0">Pronto para dar o próximo passo hoje?</p>
 
         <div class="hero">
-          <span class="eyebrow" style="color:#bac3b0">● SUA JORNADA CONTINUA</span>
+          <span class="eyebrow" style="color:var(--amarelo-claro)">● SUA JORNADA CONTINUA</span>
           <h2>O progresso acontece<br><span>um treino de cada vez.</span></h2>
           <p>Consistência é o seu superpoder. Vamos treinar?</p>
           <ion-button color="primary" routerLink="/treinos">Ver meus treinos →</ion-button>

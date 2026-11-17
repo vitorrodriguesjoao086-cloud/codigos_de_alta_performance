@@ -36,9 +36,9 @@ import { FallbackImgDirective } from '../../directives/fallback-img.directive';
           <span class="eyebrow">DETALHES DO EXERCÍCIO</span>
           <h1 style="margin: 6px 0">{{ nomeTraduzido }}</h1>
           <div>
-            <span class="tag" style="background:#aee65e">{{ exercicio.level | nivel }}</span>
+            <span class="tag" style="background:var(--amarelo); color:var(--preto); border-color:transparent;">{{ exercicio.level | nivel }}</span>
             @for (m of exercicio.primaryMuscles; track m) { <span class="tag">{{ m | musculo }}</span> }
-            @for (m of exercicio.secondaryMuscles; track m) { <span class="tag" style="background:#fff0ed">{{ m | musculo }}</span> }
+            @for (m of exercicio.secondaryMuscles; track m) { <span class="tag" style="background:rgba(255,183,0,0.08);">{{ m | musculo }}</span> }
             @if (equipamentoTraduzido) { <span class="tag">{{ equipamentoTraduzido }}</span> }
           </div>
 
