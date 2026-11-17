@@ -1,0 +1,34 @@
+/* Identidade visual do FitZone (mesmas cores/fontes do projeto web) */
+:root {
+  --ion-font-family: "DM Sans", sans-serif;
+  --ion-background-color: #f6f7f4; --ion-text-color: #20231e;
+  --ion-color-primary: #aee65e; --ion-color-primary-rgb: 174,230,94;
+  --ion-color-primary-contrast: #1d2917; --ion-color-primary-contrast-rgb: 29,41,23;
+  --ion-color-primary-shade: #9ddb4c; --ion-color-primary-tint: #b7ed6b;
+  --coral: #ff5841; --verde: #aee65e; --escuro: #121710; --linha: #e9ebe5; --muted: #85897f;
+}
+.ion-color-primary {
+  --ion-color-base: var(--ion-color-primary); --ion-color-base-rgb: var(--ion-color-primary-rgb);
+  --ion-color-contrast: var(--ion-color-primary-contrast); --ion-color-contrast-rgb: var(--ion-color-primary-contrast-rgb);
+  --ion-color-shade: var(--ion-color-primary-shade); --ion-color-tint: var(--ion-color-primary-tint);
+}
+h1, h2, h3, .marca { font-family: "Manrope", sans-serif; letter-spacing: -1px; }
+ion-toolbar.barra { --background: #121710; --color: #fff; }
+ion-menu ion-content { --background: #121710; }
+ion-menu ion-item { --background: transparent; --color: #e0e4db; }
+.pagina { padding: 16px; max-width: 900px; margin: 0 auto; }
+.eyebrow { display: block; font-size: 10px; font-weight: 700; letter-spacing: 1.2px; color: #777e70; }
+.card { background: #fff; border: 1px solid var(--linha); border-radius: 16px; overflow: hidden; cursor: pointer; }
+.grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
+.card img.foto { width: 100%; height: 130px; object-fit: cover; display: block; background: #eee; }
+.card .corpo { padding: 10px 12px 12px; }
+.card .corpo h3 { margin: 4px 0; font-size: 14px; letter-spacing: -.3px; }
+.hero { background: var(--escuro); color: #f7faef; border-radius: 20px; padding: 24px; margin: 16px 0; }
+.hero h2 { font-size: 28px; line-height: 1.15; margin: 10px 0; }
+.hero h2 span, .verde { color: #b7ed6b; }
+.hero p { color: #b4bcb0; }
+.tag { display: inline-block; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 99px; background: #f1f2ef; color: #555b50; margin: 2px 4px 2px 0; }
+.chips { white-space: nowrap; overflow-x: auto; padding-bottom: 6px; }
+.centro { display: flex; justify-content: center; padding: 24px; }
+.vazio { text-align: center; padding: 32px 16px; color: var(--muted); }
+.vazio h3 { color: var(--escuro); }
